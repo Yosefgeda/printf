@@ -16,7 +16,7 @@ va_list character[];
 va_start(character[], format);
 
 for (i = 0 ; character[i] < '\0' ; i++ )
-num = va_arg(character[i], int);
+int num = va_arg(character[i], int);
 return (num);
 
 }
